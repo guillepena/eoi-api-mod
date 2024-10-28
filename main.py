@@ -113,10 +113,6 @@ async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(
     # Devolver el token
     return {"access_token": access_token, "token_type": "bearer"}
 
-# Añadir el router a la aplicación
-app.include_router(router)
-
-
 
 
 #Method 3
